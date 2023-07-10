@@ -44,15 +44,29 @@ export default createStore({
       context.commit("setUser", userData[0]);
     },
     getBooks: async (context) => {
-      fetch("https://olwethub.github.io/db.json")
-        .then((res) => res.json())
-        .then((books) => context.commit("setBooks", books));
+      try {
+        fetch("https://olwethub.github.io/vue_db.json/db.json")
+          .then((res) => res.json())
+          .then((data) => {
+            let {books} = data;
+            context.commit("setBooks", books);
+          });
+      } catch (error) {
+        console.error(error);
+      }
     },
-    getBook: async (context, id) => {
-      fetch("https://olwethub.github.io/db.json" + id)
-        .then((res) => res.json())
-        .then((book) => context.commit("setBook", book));
-    },
+    getBook: async (context,id) => {
+      try {
+        fetch("https://olwethub.github.io/vue_db.json/db.json" + id)
+          .then((res) => res.json())
+          .then((data) => {
+            let {book} = data;
+            context.commit("setBook", book);
+          });
+      } catch (error) {
+        console.error(error);
+      }
+    }
   },
 
 })
