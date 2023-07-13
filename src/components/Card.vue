@@ -6,7 +6,7 @@
       <h4>By {{ book.author }}</h4>
       <p>Category: {{ book.category }}</p>
       <p>Price: {{ book.price }}</p>
-      <!-- <button id="addCart" @click="AddToCart++">Add to Cart</button> -->
+      <button id="addCart" @click="AddToCart++">Add to Cart</button>
     </div>
   </router-link>
 </template>
@@ -38,7 +38,8 @@ img {
     padding: 8px;
     font-size: 14px;
     font-weight: 500;
-    border: 2px solid #123f92 !important;
+    border: 2px solid #000000 !important;
     background-color: #fff ;
-  }
+    text-decoration: none !important;
+  } 
 </style>

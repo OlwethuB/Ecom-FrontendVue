@@ -40,6 +40,24 @@
       </div>
       <div class="modal-body">
         ...
+        <div class="container">
+          <div class="row">
+            <label>Book Name</label>
+            <input type="text" clearable label="book name" placeholder="book.name">
+          </div>
+          <div class="row">
+            <label>Book Author</label>
+            <input type="text" clearable label="book author" placeholder="book.author">            
+          </div>
+          <div class="row">
+            <label>Book Category</label>
+            <input type="text" clearable label="book category" placeholder="book.category">            
+          </div>
+          <div class="row">
+            <label>Book Price</label>
+            <input type="text" clearable label="book price" placeholder="book.price">            
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -58,7 +76,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-          You are deleting this product, Are you sure?...
+          You are deleting this product, Are you sure?
         ...
         <br>
         <br>
