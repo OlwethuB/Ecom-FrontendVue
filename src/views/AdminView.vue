@@ -58,7 +58,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-          You are deleting this product, Are you sure?
+          You are deleting this product, Are you sure?...
         ...
         <br>
         <br>
